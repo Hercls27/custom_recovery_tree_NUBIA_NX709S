@@ -2,7 +2,7 @@
 # Copyright (C) 2023 SebaUbuntu's TWRP device tree generator
 # SPDX-License-Identifier: Apache-2.0
 
-LOCAL_PATH := device/realme/ferrari
+LOCAL_PATH := device/nubia/NX709S
 
 # A/B Post-Instal Config
 AB_OTA_POSTINSTALL_CONFIG += \
@@ -19,12 +19,12 @@ AB_OTA_POSTINSTALL_CONFIG += \
 
 # A/B OTA Partitions   
 AB_OTA_UPDATER := true
-AB_OTA_PARTITIONS ?= system system_ext product vendor vendor_dlkm vendor_boot vbmeta vbmeta_system vbemta_vendor boot dtbo odm
+AB_OTA_PARTITIONS ?= system system_ext product vendor odm
 TARGET_ENFORCE_AB_OTA_PARTITION_LIST := true
 
 # Stock OEM OTA Cert
 PRODUCT_EXTRA_RECOVERY_KEYS += \
-    $(LOCAL_PATH)/security/local_OTA
+    $(LOCAL_PATH)/security/releasekey
 
 # Update Engine
 PRODUCT_PACKAGES += \
@@ -99,4 +99,4 @@ TARGET_RECOVERY_DEVICE_MODULES += strace
 RECOVERY_BINARY_SOURCE_FILES += $(TARGET_OUT_EXECUTABLES)/strace
 
 # OTA Assert
-TARGET_OTA_ASSERT_DEVICE := RMX3300,RMX3301,RE547F,RED8AC,RED8ACL1,ossi,qssi
+TARGET_OTA_ASSERT_DEVICE := NX709S,NX709S-UN,NX709S-EEA,NX679S,NX679S-UN,NX679S-EEA

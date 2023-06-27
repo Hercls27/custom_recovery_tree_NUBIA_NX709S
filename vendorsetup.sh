@@ -2,7 +2,7 @@
   
 #!/usr/bin/env bash
 
-FDEVICE="ferrari"
+FDEVICE="NX709S"
 #set -o xtrace
 
 fox_get_target_device() {
@@ -27,14 +27,14 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
     export LC_ALL="C"
   
 # Maintaining Info
-    export OF_MAINTAINER="hoangzk9as,cd-Crypton"
+    export OF_MAINTAINER="OMNIUM"
     export FOX_VERSION=$(date +%y.%m.%d)
     export FOX_BUILD_TYPE=Unofficial
   	
 # Device Info
     export FOX_ARCH=arm64
     export FOX_VARIANT="12.1"
-    export TARGET_DEVICE_ALT="RMX3300,RMX3301,RE547F,RED8AC,RED8ACL1,ossi,qssi"
+    export TARGET_DEVICE_ALT="NX709S,NX709S-UN,NX709S-EEA,NX679S,NX679S-UN,NX679S-EEA"
   
 # Funtions
     export FOX_REPLACE_BUSYBOX_PS=1
@@ -50,11 +50,14 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
     export FOX_DELETE_AROMAFM=1
   
 # Display Settings
-    export OF_HIDE_NOTCH=1
-    export OF_CLOCK_POS=1
+    export OF_HIDE_NOTCH=0
+    export OF_CLOCK_POS=0
     export OF_ALLOW_DISABLE_NAVBAR=0
     export OF_USE_GREEN_LED=0
-  
+    export OF_SCREEN_H=2400
+    export OF_STATUS_INDENT_LEFT=48
+    export OF_STATUS_INDENT_RIGHT=48
+
 # Partitions Handler
     export FOX_RECOVERY_SYSTEM_PARTITION="/dev/block/mapper/system"
     export FOX_RECOVERY_VENDOR_PARTITION="/dev/block/mapper/vendor"
@@ -70,7 +73,8 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
     export OF_PATCH_AVB20=1
     export OF_NO_SPLASH_CHANGE=1
     export OF_FIX_DECRYPTION_ON_DATA_MEDIA=1
-    export FOX_BUGGED_AOSP_ARB_WORKAROUND="1616300800"; # Sun 21 Mar 04:26:40 GMT 2021
+    
+FOX_BUGGED_AOSP_ARB_WORKAROUND="1616300800"; # Sun 21 Mar 04:26:40 GMT 2021
 
 	# let's see what are our build VARs
 	if [ -n "$FOX_BUILD_LOG_FILE" -a -f "$FOX_BUILD_LOG_FILE" ]; then

@@ -3,9 +3,9 @@
 # SPDX-License-Identifier: Apache-2.0
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/twrp_ferrari.mk
+    $(LOCAL_DIR)/twrp_NX709S.mk
 
 COMMON_LUNCH_CHOICES := \
-    twrp_ferrari-user \
-    twrp_ferrari-userdebug \
-    twrp_ferrari-eng
+    twrp_NX709S-user \
+    twrp_NX709S-userdebug \
+    twrp_NX709S-eng
