@@ -14,7 +14,7 @@ on:
       DEVICE_TREE_URL:
         description: 'DEVICE_TREE_URL'
         required: true
-        default: 'https://github.com/Hercls27/custom_recovery_tree_NUBIA_NX709S/tree/twrp-12.1'
+        default: 'https://github.com/Hercls27/custom_recovery_tree_NUBIA_NX709S.git'
       DEVICE_TREE_BRANCH:
         description: 'DEVICE_TREE_BRANCH'
         required: true
