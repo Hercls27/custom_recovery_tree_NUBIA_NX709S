@@ -3,8 +3,8 @@
         manifest.xml
         framework_manifest.xml
 -->
-<manifest version="5.0" type="framework">
-    <hal format="hidl" max-level="6">
+<manifest version="4.0" type="framework">
+    <hal format="hidl" max-level="5">
         <name>android.frameworks.displayservice</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -91,12 +91,12 @@
     <hal format="hidl">
         <name>vendor.qti.hardware.qccsyshal</name>
         <transport>hwbinder</transport>
-        <version>1.2</version>
+        <version>1.1</version>
         <interface>
             <name>IQccsyshal</name>
             <instance>qccsyshal</instance>
         </interface>
-        <fqname>@1.2::IQccsyshal/qccsyshal</fqname>
+        <fqname>@1.1::IQccsyshal/qccsyshal</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.radio.atcmdfwd</name>
@@ -138,7 +138,5 @@
         <version>29</version>
         <version>30</version>
         <version>31</version>
-        <version>32</version>
-        <version>33</version>
     </system-sdk>
 </manifest>
