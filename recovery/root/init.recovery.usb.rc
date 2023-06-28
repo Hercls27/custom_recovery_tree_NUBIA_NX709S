@@ -45,7 +45,6 @@ on charger
 on early-init
     write /sys/module/musb_hdrc/parameters/kernel_init_done 1
     write /sys/class/power_supply/usb/otg_switch 1
-    write /sys/class/oplus_chg/usb/otg_switch 1
 
 on init
     setprop sys.usb.configfs 1
