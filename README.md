@@ -19,7 +19,8 @@
 * Internal Storage
 * FastbootD
 * ADB Commands and Terminal
-* Flashing .zip files like magisk and recovery.
+* Flashing .zip files.
+* Flashing Firmware
 * Flashing non-logical .img files.
 * ADB Sideload
 * MTP
