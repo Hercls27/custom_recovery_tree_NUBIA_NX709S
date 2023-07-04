@@ -18,24 +18,24 @@ on:
       DEVICE_TREE_BRANCH:
         description: 'DEVICE_TREE_BRANCH'
         required: true
-        default: 'Android-12'
+        default: 'twrp-12.1'
       DEVICE_PATH:
         description: 'DEVICE_PATH'
         required: true
-        default: 'device/asus/AI2201'
+        default: 'device/nubia/NX709S'
       DEVICE_NAME:
         description: 'DEVICE_NAME'
         required: true
-        default: 'AI2201'
+        default: 'NX709S'
       MAKEFILE_NAME:
         description: 'MAKEFILE_NAME'
         required: true
-        default: 'twrp_AI2201'
+        default: 'twrp_NX709S'
       BUILD_TARGET:
         description: 'BUILD_TARGET'
         required: true
         default: 'recovery'
-      FILE_TO_CHECK:
+      #FILE_TO_CHECK:
         description: 'Specify which libs to check' # Use it know what kind of dependencies your missing for decryption.
         required: true
         default: 'system/bin/qseecomd'
@@ -172,7 +172,7 @@ jobs:
         token: ${{ secrets.GITHUB_TOKEN }}
         tag: rog6-v${{ steps.props.outputs.date }}-${{ github.run_id }}
         body: |
-          ## PBRP 3.2.0-12.1-ASUS_AI2201-${{ steps.props.outputs.date }}
+          ## PBRP 3.2.0-12.1-NUBIA_NX709S-${{ steps.props.outputs.date }}
           - To be edited.
           - To be edited.
           - To be edited. 
