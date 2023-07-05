@@ -15,11 +15,11 @@ PRODUCT_MANUFACTURER := Nubia
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
 
-# Inherit some common Twrp stuff.
-$(call inherit-product, vendor/twrp/config/common.mk)
-
 # Inherit from our custom product configuration
 $(call inherit-product-if-exists, vendor/pb/config/common.mk)
+$(call inherit-product-if-exists, vendor/twrp/config/common.mk)
+$(call inherit-product-if-exists, vendor/shrp/config/common.mk)
+$(call inherit-product-if-exists, vendor/omni/config/common.mk)
 
 # Inherit from macedonia device
 $(call inherit-product, device/nubia/NX709S/device.mk)
