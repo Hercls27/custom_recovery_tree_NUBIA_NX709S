@@ -169,3 +169,19 @@ TARGET_USES_LOGD := true
 #Fix backup 
 TW_BACKUP_EXCLUSIONS := /data/fonts/files
 TW_USE_FSCRYPT_POLICY := 2
+
+# SHRP Configuration
+SHRP_MAINTAINER := OMNIUM
+SHRP_DEVICE_CODE := NX709S
+SHRP_PATH := device/nubia/NX709S
+SHRP_REC_TYPE := Treble
+SHRP_DEVICE_TYPE := A/B
+SHRP_NOTCH := false
+SHRP_EDL_MODE := 1
+SHRP_OTG := /usbstorage
+SHRP_INTERNAL := /sdcard
+SHRP_OTG := /usb_otg
+SHRP_FLASH := 1
+SHRP_DARK := true
+SHRP_REC := /dev/block/bootdevice/by-name/recovery
+SHRP_EXPRESS := true
