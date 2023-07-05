@@ -20,8 +20,6 @@ $(call inherit-product, vendor/twrp/config/common.mk)
 
 # Inherit from our custom product configuration
 $(call inherit-product-if-exists, vendor/pb/config/common.mk)
-$(call inherit-product-if-exists, vendor/shrp/config/common.mk)
-$(call inherit-product-if-exists, vendor/omni/config/common.mk)
 
 # Inherit from macedonia device
 $(call inherit-product, device/nubia/NX709S/device.mk)
