@@ -147,6 +147,7 @@ TW_CUSTOM_CPU_TEMP_PATH := "/sys/devices/virtual/thermal/thermal_zone39/temp"
 TW_USE_TOOLBOX := true
 TW_INCLUDE_NTFS_3G := true
 TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
+TW_CUSTOM_BATTERY_PATH  := "/sys/class/power_supply/battery/uevent"
 TW_DEFAULT_BRIGHTNESS := 420
 TW_INCLUDE_REPACKTOOLS := true
 TW_INCLUDE_FUSE_EXFAT := true
