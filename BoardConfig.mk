@@ -147,7 +147,6 @@ TW_CUSTOM_CPU_TEMP_PATH := "/sys/devices/virtual/thermal/thermal_zone39/temp"
 TW_USE_TOOLBOX := true
 TW_INCLUDE_NTFS_3G := true
 TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
-TW_CUSTOM_BATTERY_PATH  := "/sys/class/power_supply/battery/uevent"
 TW_DEFAULT_BRIGHTNESS := 420
 TW_INCLUDE_REPACKTOOLS := true
 TW_INCLUDE_FUSE_EXFAT := true
@@ -158,10 +157,11 @@ TW_NO_FLASH_CURRENT_TWRP := true # For A/B devices that has dedicated recovery, 
 TW_NO_SCREEN_BLANK := true
 TW_LOAD_VENDOR_MODULES := true
 TW_EXTRA_LANGUAGES := true
-TW_NO_BATTERY_PERCENT := true
+TW_LOAD_VENDOR_MODULES := "adsp_loader_dlkm.ko qti_battery_charger.ko"
+TW_BATTERY_SYSFS_WAIT_SECONDS := 6
 
 # Maintainer/Version
-TW_DEVICE_VERSION := NX709S-BY-OMNIUM
+TW_DEVICE_VERSION := NX709S-OMNIUM
 
 # Debugging Configs
 TWRP_INCLUDE_LOGCAT := true
