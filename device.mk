@@ -71,6 +71,15 @@ PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-impl-qti.recovery \
     android.hardware.boot@1.2-service
 
+PRODUCT_PACKAGES += \
+    bootctrl.taro
+
+PRODUCT_STATIC_BOOT_CONTROL_HAL := \
+    bootctrl.taro \
+    libgptutils \
+    libz \
+    libcutils
+
 # API/SDK Version
 PRODUCT_SHIPPING_API_LEVEL := 31
 BOARD_SHIPPING_API_LEVEL := 31
