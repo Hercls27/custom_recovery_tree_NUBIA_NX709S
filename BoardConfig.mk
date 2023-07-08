@@ -141,7 +141,6 @@ BOARD_USES_QCOM_FBE_DECRYPTION := true
 TW_INCLUDE_FASTBOOTD := true
 
 # Extras
-BOARD_ROOT_EXTRA_FOLDERS := batinfo
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/system/etc/recovery.fstab
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/properties/system.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/properties/vendor.prop
