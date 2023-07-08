@@ -144,7 +144,6 @@ TW_INCLUDE_FASTBOOTD := true
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/system/etc/recovery.fstab
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/properties/system.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/properties/vendor.prop
-TARGET_VENDOR_MODULES += $(DEVICE_PATH)recovery/root/vendor/modules
 
 # Other TWRP Configurations
 TW_THEME := portrait_hdpi
