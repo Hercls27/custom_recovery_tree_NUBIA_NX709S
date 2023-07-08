@@ -143,26 +143,35 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/system/etc/recovery.fstab
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/properties/system.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/properties/vendor.prop
 
-# TWRP Configuration
+# Other TWRP Configurations
 TW_THEME := portrait_hdpi
-TW_INPUT_BLACKLIST := "hbtp_vm"
+TW_FRAMERATE := 60
+RECOVERY_SDCARD_ON_DATA := true
+TARGET_RECOVERY_QCOM_RTC_FIX := true
 TW_EXCLUDE_DEFAULT_USB_INIT := true
-TW_CUSTOM_CPU_TEMP_PATH := "/sys/devices/virtual/thermal/thermal_zone39/temp"
-TW_USE_TOOLBOX := true
 TW_INCLUDE_NTFS_3G := true
-TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
-TW_DEFAULT_BRIGHTNESS := 420
-TW_INCLUDE_REPACKTOOLS := true
+TW_NO_EXFAT_FUSE := true
+TW_USE_TOOLBOX := true
+TARGET_USES_MKE2FS := true
 TW_INCLUDE_FUSE_EXFAT := true
-TW_INCLUDE_REPACKTOOLS := true
-TW_INCLUDE_RESETPROP := true
-TW_EXCLUDE_APEX := true
-TW_NO_FLASH_CURRENT_TWRP := true # For A/B devices that has dedicated recovery, removing that option in Advance.
-TW_NO_SCREEN_BLANK := true
-TW_LOAD_VENDOR_MODULES := true
+TW_INCLUDE_FUSE_NTFS := true
+TW_INPUT_BLACKLIST := "hbtp_vm"
+TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
+TW_MAX_BRIGHTNESS := 2047
 TW_EXTRA_LANGUAGES := true
+TW_DEFAULT_LANGUAGE := en_US
+TW_DEFAULT_BRIGHTNESS := 420
+TW_EXCLUDE_APEX := true
+TW_HAS_EDL_MODE := true
+# Haptic
+TW_SUPPORT_INPUT_AIDL_HAPTICS := false
+TW_SUPPORT_INPUT_AIDL_HAPTICS_FQNAME := "IVibrator/vibratorfeature"
+TW_SUPPORT_INPUT_AIDL_HAPTICS_FIX_OFF := true
+TW_USE_SERIALNO_PROPERTY_FOR_DEVICE_ID := true
 TW_LOAD_VENDOR_MODULES := "adsp_loader_dlkm.ko qti_battery_charger.ko"
+TW_CUSTOM_CPU_TEMP_PATH := "/sys/class/thermal/thermal_zone35/temp"
 TW_BATTERY_SYSFS_WAIT_SECONDS := 6
+TW_NO_HAPTICS := true
 
 # Maintainer/Version
 TW_DEVICE_VERSION := NX709S-OMNIUM
