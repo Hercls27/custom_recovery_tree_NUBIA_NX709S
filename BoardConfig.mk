@@ -137,6 +137,9 @@ TW_INCLUDE_CRYPTO_FBE := true
 TW_INCLUDE_FBE_METADATA_DECRYPT := true
 BOARD_USES_QCOM_FBE_DECRYPTION := true
 
+# Fastbootd
+TW_INCLUDE_FASTBOOTD := true
+
 # Extras
 BOARD_ROOT_EXTRA_FOLDERS := batinfo
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/system/etc/recovery.fstab
